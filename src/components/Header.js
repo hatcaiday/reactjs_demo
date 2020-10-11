@@ -3,13 +3,15 @@ import React from 'react';
 class Header extends React.Component {
   render() {
     return (
-      <thead>
-        <tr>
-          <th>
-            Header
-          </th>
-        </tr>
-      </thead>
+      <div className="row">
+        <div className="col-sm border">
+          Header
+        </div>
+
+        <div className="col-sm border">
+          {new Date().toLocaleTimeString()}
+        </div>
+      </div>
     )
   }
 }
