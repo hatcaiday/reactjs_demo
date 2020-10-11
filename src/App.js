@@ -7,10 +7,14 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <table className="table table-bordered">
+        <div className="container">
           <Header />
           <Body />
-        </table>
+        </div>
+        {/* <table className="table table-bordered">
+          <Header />
+          <Body />
+        </table> */}
       </div>
     )
   }
