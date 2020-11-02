@@ -1,4 +1,5 @@
 import React from 'react';
+import UserForm from './bodies/UserForm';
 
 class Header extends React.Component {
   render() {
@@ -7,6 +8,11 @@ class Header extends React.Component {
         <tr>
           <th>
             Header
+          </th>
+          <th>
+            <button onClick={this.props.handleAddUserClick}>
+              Add User
+            </button>
           </th>
         </tr>
       </thead>
